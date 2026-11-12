@@ -51,7 +51,7 @@ main > section:first-child { margin-top: 0 }
 .btn.alt { background: 0 0; box-shadow: inset 0 0 0 1px #bac9df }
 .btn:focus-visible,.btn:hover { color: #000; background: #fff }
 .intro { text-align: center; margin: 0 auto 64px }
-.intro p { margin-top: 18px; font-size: 20px; font-weight: 600 }
+.intro p { margin-top: 18px; font-size: 20px; font-weight: 300 }
 summary { cursor: pointer; list-style: none }
 summary::-webkit-details-marker { display: none }
 .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 30px }
@@ -65,7 +65,7 @@ summary::-webkit-details-marker { display: none }
 .compare ul { display: grid; gap: 16px; list-style: none; padding: 16px 0 0; margin: 0 }
 .compare li { min-height: 108px; padding: 24px; border-radius: 16px; background: #fafafa }
 .compare details:last-child li { background: var(--soft) }
-.tag { display: inline-block; padding: 6px 16px; border-radius: 30px; color: var(--ink); background: var(--cyan); font-size: 16px; font-weight: 400; line-height: 1.3; text-transform: uppercase; letter-spacing: -.02em }
+.tag { display: inline-block; padding: 6px 16px; border-radius: 30px; color: var(--ink); background: rgb(198, 210, 223); font-size: 16px; font-weight: 400; line-height: 1.3; text-transform: uppercase; letter-spacing: -.02em }
 .intro .tag { margin-bottom: 28px }
 .steps { list-style: none; display: grid; grid-template-columns: repeat(4,1fr); padding: 0; margin: 0; counter-reset: step; text-align: center }
 .steps li { position: relative; padding: 24px 28px 0; border-top: 2px solid var(--ink); counter-increment: step }
@@ -76,7 +76,7 @@ summary::-webkit-details-marker { display: none }
 .scale { min-height: 445px; grid-template-columns: 1.7fr 1fr }
 .scale p { max-width: 700px; margin-top: 28px; font-size: 20px; font-weight: 600 }
 .scale .art { width: 100%; max-width: 410px; justify-self: end }
-.audience > p { font-size: 20px; font-weight: 600 }
+.audience > p { font-size: 20px; font-weight: 300 }
 main > .audience { margin-top: 20px; padding: 72px 44px 56px; background: var(--soft); border-radius: var(--radius) }
 .audience h2 { margin: 48px 0 20px }
 .people { display: grid; grid-template-columns: repeat(4,1fr); gap: 44px; margin-top: 60px }
@@ -246,7 +246,7 @@ button,select { font: inherit }
 .walk-foot { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 24px }
 .walk-count { color: #526174; font-size: 13px }
 .choices { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px }
-.choices-label { flex-basis: 100%; color: #526174; font-size: 13px; margin-bottom: 2px }
+.choices-label { flex-basis: 100%; color: #526174; font-size: 12px; margin-bottom: 2px }
 .compare li[hidden] { display: none }
 .compare li { min-height: 128px }
 .feature-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 56px }
@@ -356,7 +356,7 @@ thead .column-focus { background: #123f58!important; color: var(--cyan)!importan
 
       <section aria-labelledby="compare">
         <header class="intro">
-          <h2 id="compare"><strong>How</strong> Most Organizations Buy Leads<br>vs. How AllCalls.io Works</h2>
+          <h2 id="compare">How Most Organizations Buy Leads<br>vs. <strong>How AllCalls.io Works</strong></h2>
           <p>Move from static lead files to live intent, smarter routing, and real-time visibility.</p>
         </header>
         <div class="choices" data-compare=""><span class="choices-label">Compare the whole workflow, or focus on one difference.</span><button class="pill" type="button" data-factor="all" aria-pressed="true">All differences</button><button class="pill" type="button" data-factor="0" aria-pressed="false">Intent</button><button class="pill" type="button" data-factor="1" aria-pressed="false">Routing</button><button class="pill" type="button" data-factor="2" aria-pressed="false">Visibility</button><button class="pill" type="button" data-factor="3" aria-pressed="false">Consent</button><span class="sr-only" role="status"></span></div><div class="compare">
@@ -382,7 +382,7 @@ thead .column-focus { background: #123f58!important; color: var(--cyan)!importan
       </section>
 
       <section class="flow" aria-labelledby="flow" id="call-flow">
-        <header class="intro"><span class="tag"><b>How</b> it works</span><h2 id="flow">From First Ring to <strong>Routed Call</strong></h2></header>
+        <header class="intro"><span class="tag">How it works</span><h2 id="flow">From First Ring to <strong>Routed Call</strong></h2></header>
         <div class="walk" data-walk=""><div class="walk-nav" role="tablist" aria-label="Call workflow" style="--n:4"><button class="walk-tab" type="button" role="tab" id="step-tab-0" aria-controls="step-panel-0" aria-selected="true" tabindex="0"><span aria-hidden="true">01</span>Consumer Demand Is Sourced</button><button class="walk-tab" type="button" role="tab" id="step-tab-1" aria-controls="step-panel-1" aria-selected="false" tabindex="-1"><span aria-hidden="true">02</span>Calls Are Screened by AI</button><button class="walk-tab" type="button" role="tab" id="step-tab-2" aria-controls="step-panel-2" aria-selected="false" tabindex="-1"><span aria-hidden="true">03</span>Calls Are Routed by Your Rules</button><button class="walk-tab" type="button" role="tab" id="step-tab-3" aria-controls="step-panel-3" aria-selected="false" tabindex="-1"><span aria-hidden="true">04</span>Performance Is Tracked in Real Time</button></div><div class="walk-panels"><section class="walk-pane" id="step-panel-0" role="tabpanel" aria-labelledby="step-tab-0" tabindex="0"><span class="stamp">Step 01</span><h3>Consumer Demand Is Sourced</h3><p>Inbound call volume comes from consumers actively seeking insurance information, not static databases.</p></section><section class="walk-pane" id="step-panel-1" role="tabpanel" aria-labelledby="step-tab-1" tabindex="0"><span class="stamp">Step 02</span><h3>Calls Are Screened by AI</h3><p>AI screening supports call quality and helps confirm fit before a call reaches an agent, with TCPA and consent considerations built into the flow.</p></section><section class="walk-pane" id="step-panel-2" role="tabpanel" aria-labelledby="step-tab-2" tabindex="0"><span class="stamp">Step 03</span><h3>Calls Are Routed by Your Rules</h3><p>Availability, geography, vertical, and campaign logic determine where each call lands, whether that's a single agent, a team, or a downline.</p></section><section class="walk-pane" id="step-panel-3" role="tabpanel" aria-labelledby="step-tab-3" tabindex="0"><span class="stamp">Step 04</span><h3>Performance Is Tracked in Real Time</h3><p>Every call is recorded, transcribed, and logged, giving leadership a live record instead of a delayed summary.</p></section></div><div class="walk-foot"><span class="walk-count">Step 1 of 4</span><button class="pill" type="button" data-next="">Next step <span aria-hidden="true">→</span></button></div><span class="sr-only" role="status"></span></div>
       </section>
 
@@ -392,8 +392,8 @@ thead .column-focus { background: #123f58!important; color: var(--cyan)!importan
       </section>
 
       <section class="audience" aria-labelledby="audience">
-        <span class="tag"><b>Who</b> it's built for</span>
-        <h2 id="audience"><strong>Who</strong> Is AllCalls.io Meant For?</h2>
+        <span class="tag">Who it's built for</span>
+        <h2 id="audience"><strong>Who Is AllCalls.io Meant For?</strong></h2>
         <p>Every insurance organization manages demand differently.</p>
         <div class="people">
           <article><svg class="icon" aria-hidden="true" width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="73" height="73" rx="36.5" fill="#031635"></rect><mask id="svg2-mask0_52_1439" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="16" width="41" height="41"><rect x="16.5" y="16.5" width="40" height="40" fill="#D9D9D9"></rect></mask><g mask="url(#svg2-mask0_52_1439)"><path d="M31.6946 43.1666C32.574 43.1666 33.3171 42.8595 33.9238 42.2453C34.5302 41.6309 34.8333 40.8924 34.8333 40.0299C34.8333 39.1674 34.5302 38.4283 33.9238 37.8124C33.3171 37.1966 32.5786 36.8887 31.7083 36.8887C30.8381 36.8887 30.095 37.1959 29.4792 37.8103C28.8633 38.4245 28.5554 39.1628 28.5554 40.0253C28.5554 40.8881 28.8628 41.6273 29.4775 42.2428C30.0922 42.8587 30.8313 43.1666 31.6946 43.1666ZM43.5208 42.2453C44.1367 41.6309 44.4446 40.8924 44.4446 40.0299C44.4446 39.1674 44.1374 38.4283 43.5229 37.8124C42.9088 37.1966 42.1704 36.8887 41.3079 36.8887C40.4452 36.8887 39.706 37.1959 39.0904 37.8103C38.4746 38.4245 38.1667 39.1628 38.1667 40.0253C38.1667 40.8881 38.4738 41.6273 39.0879 42.2428C39.7024 42.8587 40.4408 43.1666 41.3033 43.1666C42.1658 43.1666 42.905 42.8595 43.5208 42.2453ZM38.7154 33.7291C39.331 33.1227 39.6388 32.3842 39.6388 31.5137C39.6388 30.6434 39.3317 29.9003 38.7175 29.2845C38.1033 28.6689 37.3649 28.3612 36.5021 28.3612C35.6396 28.3612 34.9004 28.6685 34.2846 29.2833C33.669 29.898 33.3613 30.6369 33.3613 31.4999C33.3613 32.3796 33.6683 33.1227 34.2825 33.7291C34.8967 34.3355 35.6352 34.6387 36.4979 34.6387C37.3604 34.6387 38.0996 34.3355 38.7154 33.7291ZM36.5075 53.1666C34.2067 53.1666 32.0446 52.7291 30.0213 51.8541C27.9979 50.9791 26.2315 49.787 24.7221 48.2778C23.2129 46.7684 22.0208 45.0013 21.1458 42.9766C20.2708 40.9519 19.8333 38.7884 19.8333 36.4862C19.8333 34.1839 20.2708 32.0203 21.1458 29.9953C22.0208 27.9706 23.2129 26.2083 24.7221 24.7083C26.2315 23.2083 27.9986 22.0208 30.0233 21.1458C32.0481 20.2708 34.2115 19.8333 36.5138 19.8333C38.816 19.8333 40.9796 20.2708 43.0046 21.1458C45.0293 22.0208 46.7917 23.2083 48.2917 24.7083C49.7917 26.2083 50.9792 27.9721 51.8542 29.9999C52.7292 32.0277 53.1667 34.1919 53.1667 36.4924C53.1667 38.7933 52.7292 40.9553 51.8542 42.9787C50.9792 45.002 49.7917 46.7666 48.2917 48.2724C46.7917 49.7783 45.0278 50.9705 43 51.8491C40.9722 52.7274 38.8081 53.1666 36.5075 53.1666ZM36.5138 50.3887C40.3749 50.3887 43.6527 49.0369 46.3471 46.3333C49.0415 43.6296 50.3888 40.3473 50.3888 36.4862C50.3888 32.6251 49.0433 29.3473 46.3525 26.6528C43.6614 23.9584 40.3772 22.6112 36.5 22.6112C32.6481 22.6112 29.3703 23.9566 26.6667 26.6474C23.9631 29.3385 22.6113 32.6227 22.6113 36.4999C22.6113 40.3519 23.9631 43.6296 26.6667 46.3333C29.3703 49.0369 32.6526 50.3887 36.5138 50.3887Z" fill="#00F5F0"></path></g></svg><h3>Agencies</h3><p>Agencies distributing inbound volume across multiple agents need routing that doesn't depend on manual handoffs slowing down speed to consumers. AllCalls.io routes automatically, agent by agent.</p></article>
